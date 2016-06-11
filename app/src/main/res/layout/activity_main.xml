@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.job.mathu.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question: "
+            android:id="@+id/gameStatus"
+            android:textSize="25sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:id="@+id/round"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/button1"
+                style="@style/buttonStyle"
+                android:onClick="press1"
+                android:text="1"/>
+            <Button
+                android:id="@+id/button2"
+                style="@style/buttonStyle"
+                android:onClick="press2"
+                android:text="2"/>
+            <Button
+                android:id="@+id/button3"
+                style="@style/buttonStyle"
+                android:onClick="press3"
+                android:text="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="30dp">
+            <Button
+                android:id="@+id/button4"
+                style="@style/buttonStyle"
+                android:onClick="press4"
+                android:text="4"/>
+            <Button
+                android:id="@+id/button5"
+                style="@style/buttonStyle"
+                android:onClick="press5"
+                android:text="5"/>
+            <Button
+                android:id="@+id/button6"
+                style="@style/buttonStyle"
+                android:onClick="press6"
+                android:text="6"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solve the equation:"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:text="hello"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="100dp"
+            android:onClick="startGame"
+            android:id="@+id/startButton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            android:onClick="restartGame"/>
+
+    </LinearLayout>
+
+</LinearLayout>
